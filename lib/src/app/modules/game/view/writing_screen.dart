@@ -204,29 +204,34 @@
 //================================================================================================
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:signature/signature.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
+import '../../../../core/const/colors.dart';
 import '../../../widgets/icon_button_widget.dart';
 import '../../../widgets/primary_button_widget.dart';
+import '../controller/game_controller.dart';
 import '../widgets/results_dialog.dart';
 
 class WritingScreen extends StatefulWidget {
   const WritingScreen({
     super.key,
-    required this.title,
+    required this.gameMode,
   });
 
-  final String title;
+ // final String title;
+   final String gameMode;
 
   @override
   State<WritingScreen> createState() => _WritingScreenState();
 }
 
 class _WritingScreenState extends State<WritingScreen> {
+   final GameController gameController = Get.put(GameController());
   final SignatureController _controller = SignatureController(
     penStrokeWidth: 9.0,
     penColor: const Color.fromARGB(255, 0, 0, 0), // Set pen color to black
@@ -238,6 +243,7 @@ class _WritingScreenState extends State<WritingScreen> {
 
   @override
   void initState() {
+     gameController.fetchGameInstructions(widget.gameMode);
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.landscapeLeft,
       DeviceOrientation.landscapeRight,
@@ -294,7 +300,20 @@ class _WritingScreenState extends State<WritingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: OrientationBuilder(
+      body:  Obx(
+      () => gameController.isLoading.value == true
+          ? const Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircularProgressIndicator(
+                    color: PRIMARY_COLOR,
+                    backgroundColor: Colors.black12,
+                  ),
+                ],
+              ),
+            )
+          : OrientationBuilder(
         builder: (context, orientation) {
           if (orientation == Orientation.portrait) {
             return const Center(
@@ -369,9 +388,10 @@ class _WritingScreenState extends State<WritingScreen> {
                                 const SizedBox(height: 10),
 
                                 //----title
-                                const Text(
-                                  'ට අකුර ලියන්න',
-                                  style: TextStyle(
+                                 Text(
+                                  gameController.instructionsData.isNotEmpty ?
+                                      '${gameController.instructionsData[0]?.content} අකුර ලියන්න' : 'ර අකුර ලියන්න',
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontSize: 24,
                                     fontWeight: FontWeight.bold,
@@ -473,7 +493,9 @@ class _WritingScreenState extends State<WritingScreen> {
             );
           }
         },
-      ),
+      ), )
+     
+
     );
   }
 }
