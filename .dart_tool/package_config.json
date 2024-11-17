@@ -14,6 +14,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "args",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/args-2.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
       "name": "async",
       "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
@@ -140,10 +146,22 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "flutter_svg",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/flutter_svg-2.0.14",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Applications/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "3.3"
+    },
+    {
+      "name": "flutter_tts",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/flutter_tts-4.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "flutter_web_plugins",
@@ -168,6 +186,12 @@
       "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/image-4.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
     },
     {
       "name": "leak_tracker",
@@ -224,6 +248,30 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "path_parsing",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/path_parsing-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/path_provider-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/path_provider_android-2.2.12",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/path_provider_foundation-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "path_provider_linux",
       "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1",
       "packageUri": "lib/",
@@ -238,6 +286,12 @@
     {
       "name": "path_provider_windows",
       "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
@@ -296,6 +350,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "signature",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/signature-5.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Applications/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -344,6 +404,24 @@
       "languageVersion": "3.5"
     },
     {
+      "name": "vector_graphics",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/vector_graphics-1.1.14",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "vector_graphics_codec",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.12",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "vector_graphics_compiler",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.15",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -368,13 +446,19 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "xml",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/xml-6.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "dyslearn",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-11-15T18:32:00.118206Z",
+  "generated": "2024-11-16T19:43:06.176415Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Applications/flutter",
