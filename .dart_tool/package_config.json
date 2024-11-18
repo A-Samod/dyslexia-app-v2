@@ -194,6 +194,12 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/intl-0.19.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "leak_tracker",
       "rootUri": "file:///Users/asamod/.pub-cache/hosted/pub.dev/leak_tracker-10.0.5",
       "packageUri": "lib/",
@@ -458,7 +464,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-11-17T07:44:18.450748Z",
+  "generated": "2024-11-17T14:37:09.063278Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Applications/flutter",
