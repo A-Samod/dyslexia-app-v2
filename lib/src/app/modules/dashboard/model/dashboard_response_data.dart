@@ -1,7 +1,7 @@
 class DashboardResponseData {
   String id;
   String userId;
-  int usedTime;
+  String usedTime;
   int? wrongCount = 0;
   int? roundCount = 1;
   String letterOrWord;
