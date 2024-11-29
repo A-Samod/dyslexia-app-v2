@@ -25,7 +25,7 @@ This repository hosts the **Dyslexia Learning Assistant for Sinhala Children**, 
 - **Backend**: Node.js APIs
 - **Database**: MongoDB
 - **Authentication**: Firebase
-- **Machine Learning**: TensorFlow for Sinhala handwriting recognition
+- **Machine Learning**: TensorFlow with CNN integration for Sinhala handwriting recognition
 
 ---
 
