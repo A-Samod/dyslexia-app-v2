@@ -63,26 +63,26 @@ class DrawerMenu extends StatelessWidget {
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: PRIMARY_COLOR,
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: ListTile(
-                      title: const Text(
-                        "Profile",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      onTap: () {
-                        Navigator.pushNamed(context, '/profile');
-                      },
-                    ),
-                  ),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     color: PRIMARY_COLOR,
+                  //     borderRadius: BorderRadius.circular(15),
+                  //   ),
+                  //   child: ListTile(
+                  //     title: const Text(
+                  //       "Profile",
+                  //       textAlign: TextAlign.center,
+                  //       style: TextStyle(
+                  //         color: Colors.white,
+                  //         fontSize: 18,
+                  //         fontWeight: FontWeight.w500,
+                  //       ),
+                  //     ),
+                  //     onTap: () {
+                  //       Navigator.pushNamed(context, '/profile');
+                  //     },
+                  //   ),
+                  // ),
                   const SizedBox(height: 10),
                   Container(
                     decoration: BoxDecoration(
@@ -91,7 +91,7 @@ class DrawerMenu extends StatelessWidget {
                     ),
                     child: ListTile(
                       title: const Text(
-                        "Dashboard",
+                        "ප්‍රගති පුවරුව",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,

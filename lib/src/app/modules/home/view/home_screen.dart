@@ -99,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       onTapFunc: () {
                                         showOrientationAlert(
                                           context,
-                                          'GAME1',
+                                          'single',
                                           '/writing-screen',
                                         );
                                       },
@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       onTapFunc: () {
                                         showOrientationAlert(
                                           context,
-                                          'GAME2',
+                                          'two',
                                           '/writing-screen',
                                         );
                                       },
@@ -121,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       onTapFunc: () {
                                         showOrientationAlert(
                                           context,
-                                          'GAME3',
+                                          'three',
                                           '/writing-screen',
                                         );
                                       },

@@ -1,22 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class SummaryTab extends StatelessWidget {
   const SummaryTab({
     super.key,
     required this.date,
-    required this.startAt,
+    required this.type,
     required this.title,
     required this.timeToComplete,
     required this.totalWrongAnswers,
+    required this.writtenLetterOrWord,
     required this.totalTrys,
   });
 
   final String date;
-  final String startAt;
+  final String type;
   final String title;
   final String timeToComplete;
   final String totalWrongAnswers;
   final String totalTrys;
+  final String writtenLetterOrWord;
 
   @override
   Widget build(BuildContext context) {
@@ -33,31 +36,54 @@ class SummaryTab extends StatelessWidget {
           Row(
             children: [
               const Expanded(
-                flex: 2,
+                flex: 1,
                 child: Text("දිනය"),
               ),
-              const SizedBox(width: 50),
-              Expanded(
-                flex: 2,
-                child: Text(date),
-              ),
+              const SizedBox(width: 240),
               Expanded(
                 flex: 1,
-                child: Text(startAt),
+                child:
+                    Text(DateFormat('yyyy-MM-dd').format(DateTime.parse(date))),
               ),
+              // Expanded(
+              //   flex: 1,
+              //   child: Text('$startAt Seconds'),
+              // ),
             ],
           ),
           const SizedBox(height: 10),
-          Text(
-            title,
-            style: const TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 18,
-            ),
-          ),
+          type == 'single'
+              ? Text(
+                  '$title අකුර ලියන්න',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18,
+                  ),
+                )
+              : Text(
+                  '$title වචනෙ ලියන්න',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18,
+                  ),
+                ),
           const SizedBox(height: 10),
+          // Text(
+          //         '$writtenLetterOrWord අකුර2 ලියන්න',
+          //         style: const TextStyle(
+          //           fontWeight: FontWeight.w500,
+          //           fontSize: 18,
+          //         ),
+          //       ),
           Column(
             children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text("ලියන ලද අකුර/වචනය"),
+                  Text(writtenLetterOrWord),
+                ],
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

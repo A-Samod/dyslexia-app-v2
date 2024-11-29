@@ -24,7 +24,7 @@ class CustomRouter {
         final gameMode = args as String;
         return MaterialPageRoute(
           builder: (_) => WritingScreen(
-            title: gameMode,
+            gameMode: gameMode,
           ),
         );
       case '/dashboard':
